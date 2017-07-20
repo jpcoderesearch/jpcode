@@ -11,5 +11,17 @@ module Jpcode
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+  
+ config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+
+  	:address => 'smtp.gmail.com',
+  	:domain => 'mail.google.com',
+  	:port => 587,
+  	:user_name => "jpcoderesearch@gmail.com",
+  	:password => "application1",
+  	:authentication => 'login',
+  	:enble_starttls_auto => true
+  }
   end
 end
