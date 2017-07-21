@@ -1,29 +1,63 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Posts</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div class="row">
 
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.content %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <div class="col s12">
+    
+  </div>
+      <div class="col s6"> 
+            <div class="card blue-grey darken-1">
+                    <div class="card-content">
+                        <span class="card-title">Card Title</span>
+                          <ul class="collapsible popout" data-collapsible="accordion">
+                            <li>
+                              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                            </li>
+                            <li>
+                              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                            </li>
+                            <li>
+                              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                      </div>
+              </div>
+      </div>
+      <div class="col s6">
+             <div class="card blue-grey darken-1">
+                    <div class="card-content">
+                        <span class="card-title">Card Title</span>
+                          <ul class="collapsible popout" data-collapsible="accordion">
+                            <li>
+                              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                            </li>
+                            <li>
+                              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                            </li>
+                            <li>
+                              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                      </div>
+              </div>
+        </div>
+    </div>
 
-<br>
-
-<%= link_to 'New Post', new_post_path %>
+    <script>
+     Materialize.toast('Welcome to ga solutions!', 3000, 'rounded', 'green')
+     $('.carousel.carousel-slider').carousel({fullWidth: true});
+    </script>
